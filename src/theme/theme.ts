@@ -6,6 +6,8 @@ export const Dark = {
     primaryColorLight: '#F6F5FF',
     toggleColor: '#FFFFFF',
     textColor: '#CCCCCC',
+    activeColor: '#10191A',
+    inactiveColor: '#444444',
   },
   transition: {
     tran02: 'all 0.2s ease',
@@ -24,6 +26,8 @@ export const Light = {
     primaryColorLight: '#F6F5FF',
     toggleColor: '#DDDDDD',
     textColor: '#707070',
+    activeColor: '#E4E9F7',
+    inactiveColor: '#CCCCCC',
   },
   transition: {
     tran02: 'all 0.2s ease',
