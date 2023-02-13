@@ -56,7 +56,7 @@ export const Sidebar = ({
             </S.NavLink>
           </S.MenuLinks>
         </S.Menu>
-        <S.BottomContent>
+        <div>
           <S.NavLink>
             <a href="#">
               <IoLogOutOutline className="icon" />
@@ -65,15 +65,15 @@ export const Sidebar = ({
           </S.NavLink>
           <S.Mode>
             <S.DarkLight>
-              {isDark && <S.IconSun isFull={isFull} className="icon" />}
-              {!isDark && <S.IconMoon isFull={isFull} className="icon" />}
+              {!isDark && <S.IconSun isFull={isFull} className="icon" />}
+              {isDark && <S.IconMoon isFull={isFull} className="icon" />}
             </S.DarkLight>
             <S.ModeText isFull={isFull}>Dark Mode</S.ModeText>
             <S.ToggleSwitch onClick={toggleTheme}>
               <S.Switch />
             </S.ToggleSwitch>
           </S.Mode>
-        </S.BottomContent>
+        </div>
       </S.MenuBar>
     </S.Sidebar>
   );

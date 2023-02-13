@@ -188,8 +188,6 @@ export const NavLink = styled.li`
   }
 `;
 
-export const BottomContent = styled.div``;
-
 export const Mode = styled.li`
   position: relative;
   display: flex;
@@ -197,7 +195,7 @@ export const Mode = styled.li`
   list-style: none;
   background: ${(props) => props.theme.colors.foreground};
   @media (max-width: 470px) {
-    right: -105px;
+    right: calc(334px - 100vw);
     top: -50px;
   }
 `;

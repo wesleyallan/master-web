@@ -30,6 +30,11 @@ export const SidebarContainer = styled.div`
 
 export const Content = styled.main`
   grid-area: content;
-  background-color: ${(props) => props.theme.colors.foreground};
+  margin-left: 5px;
+  background-color: ${(props) => props.theme.colors.background};
   border-radius: 5px;
+  @media (max-width: 470px) {
+    margin-left: 0;
+    margin-top: 5px;
+  }
 `;

@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  height: calc(100vh - 100px);
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  margin-right: 7px;
-  background-color: ${(props) => props.theme.foreground};
+  background-color: ${(props) => props.theme.colors.foreground};
+  overflow: hidden;
 `;

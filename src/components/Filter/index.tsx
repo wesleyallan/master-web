@@ -1,11 +1,10 @@
 import React from 'react';
-import { Search } from '../Search';
 import * as S from './styles';
 
 export const Filter = () => {
   return (
     <S.Container>
-      <Search />
+      <h1>Controle de Clientes</h1>
     </S.Container>
   );
 };
