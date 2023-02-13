@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Customers } from './pages/Customers';
 import { Dark, Light } from './theme/theme';
 import Global from './theme/Global';
 import { Layout } from './components/Layout';
+import { usePersistent } from './hooks/usePersistent';
 
 function App() {
-  const [isDark, setIsDark] = useState<boolean>(false);
+  const { value: isDark, setValue: setIsDark } = usePersistent('DARK_MODE');
 
   const toggleTheme = (): void => {
     setIsDark((prev) => !prev);
