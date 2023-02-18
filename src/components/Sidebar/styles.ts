@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
+import type { StyledComponentsProps } from './types';
 
 export const Container = styled.nav`
   position: relative;
@@ -21,7 +22,7 @@ export const Logo = styled.img`
   width: 4rem;
 `;
 
-export const ContainerAbout = styled.div`
+export const ContainerAbout = styled.div<StyledComponentsProps>`
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;

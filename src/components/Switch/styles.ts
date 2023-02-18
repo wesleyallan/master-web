@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import type { StyledComponentsProps } from './types';
 
 export const Container = styled.div`
   position: relative;
@@ -9,7 +10,7 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.colors.textColor};
 `;
 
-export const ContainerSwitchIcon = styled.div`
+export const ContainerSwitchIcon = styled.div<StyledComponentsProps>`
   display: flex;
   align-items: center;
   & svg {
@@ -24,7 +25,7 @@ export const ContainerSwitchIcon = styled.div`
   }
 `;
 
-export const Text = styled.span`
+export const Text = styled.span<StyledComponentsProps>`
   transition: ${({ theme }) => theme.transition.tran04};
   white-space: nowrap;
   ${({ isFull }) =>

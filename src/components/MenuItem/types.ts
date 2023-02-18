@@ -4,3 +4,7 @@ export interface MenuItemProps {
   isFooterItem?: boolean;
   isFull: boolean;
 }
+
+export interface StyledComponentsProps {
+  isFull: boolean;
+}

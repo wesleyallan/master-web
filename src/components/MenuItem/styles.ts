@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import type { StyledComponentsProps } from './types';
 
 export const Container = styled.li`
   height: 5rem;
@@ -28,7 +29,7 @@ export const Icon = styled.span`
   }
 `;
 
-export const Title = styled.p`
+export const Title = styled.p<StyledComponentsProps>`
   display: inline;
   color: ${({ theme }) => theme.colors.textColor};
   transition: ${(props) => props.theme.transition.tran02};

@@ -3,3 +3,7 @@ export interface LayoutProps {
   isDark: boolean;
   toggleTheme: () => void;
 }
+
+export interface StyledComponentsProps {
+  isFull: boolean;
+}

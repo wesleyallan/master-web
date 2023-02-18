@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import type { StyledComponentsProps } from './types';
 
-export const Container = styled.div`
+export const Container = styled.div<StyledComponentsProps>`
   height: 100vh;
   display: grid;
   transition: ${({ theme }) => theme.transition.tran05};

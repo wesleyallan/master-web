@@ -5,3 +5,7 @@ export interface SidebarProps {
   toggleTheme: () => void;
   toggleFull: () => void;
 }
+
+export interface StyledComponentsProps {
+  isFull: boolean;
+}

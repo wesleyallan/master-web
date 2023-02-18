@@ -3,3 +3,7 @@ export interface SwitchProps {
   onClick: () => void;
   isFull: boolean;
 }
+
+export interface StyledComponentsProps {
+  isFull: boolean;
+}
