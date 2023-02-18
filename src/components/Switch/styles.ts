@@ -61,5 +61,6 @@ export const Switch = styled.span`
     left: ${(props) => props.theme.transition.togglePosition};
     transform: translateY(-50%);
     background: ${(props) => props.theme.colors.foreground};
+    transition: ${(props) => props.theme.transition.tran03};
   }
 `;
