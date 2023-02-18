@@ -10,10 +10,12 @@ export const Dark = {
     inactiveColor: '#444444',
   },
   transition: {
+    tran01: 'all 0.1s ease',
     tran02: 'all 0.2s ease',
     tran03: 'all 0.3s ease',
     tran04: 'all 0.4s ease',
     tran05: 'all 0.5s ease',
+    tran06: 'all 0.6s ease',
     togglePosition: '25px',
   },
 };
@@ -30,10 +32,12 @@ export const Light = {
     inactiveColor: '#CCCCCC',
   },
   transition: {
+    tran01: 'all 0.1s ease',
     tran02: 'all 0.2s ease',
     tran03: 'all 0.3s ease',
     tran04: 'all 0.4s ease',
     tran05: 'all 0.5s ease',
+    tran06: 'all 0.6s ease',
     togglePosition: '5px',
   },
 };

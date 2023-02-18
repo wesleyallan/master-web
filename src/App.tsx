@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Layout } from './components/Layout';
 import { ThemeProvider } from 'styled-components';
-import { Customers } from './pages/Customers';
 import { Dark, Light } from './theme/theme';
 import Global from './theme/Global';
-import { Layout } from './components/Layout';
-import { usePersistent } from './hooks/usePersistent';
 
 function App() {
-  const { value: isDark, setValue: setIsDark } = usePersistent('DARK_MODE');
+  const [isDark, setIsDark] = useState<boolean>(false);
 
   const toggleTheme = (): void => {
     setIsDark((prev) => !prev);
@@ -16,9 +14,7 @@ function App() {
   return (
     <ThemeProvider theme={isDark ? Dark : Light}>
       <Global />
-      <Layout isDark={isDark} toggleTheme={toggleTheme}>
-        <Customers />
-      </Layout>
+      <Layout toggleTheme={toggleTheme} isDark={isDark} />
     </ThemeProvider>
   );
 }
