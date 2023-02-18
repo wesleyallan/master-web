@@ -53,9 +53,15 @@ export const ToggleLeft = styled(FaAngleLeft)`
   align-items: center;
   border-radius: 50%;
   transform: translateY(-50%);
+  box-shadow: -0.1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+    0 0.15rem 0.2rem rgba(0, 0, 0, 0.3);
   background: ${({ theme }) => theme.colors.primaryColor};
   color: ${({ theme }) => theme.colors.toggleColor};
   font-size: 2.2rem;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(0.85);
+  }
 `;
 
 export const ToggleRight = styled(FaAngleRight)`
@@ -69,9 +75,15 @@ export const ToggleRight = styled(FaAngleRight)`
   align-items: center;
   border-radius: 50%;
   transform: translateY(-50%);
+  box-shadow: -0.1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2),
+    0 0.15rem 0.2rem rgba(0, 0, 0, 0.3);
   background: ${({ theme }) => theme.colors.primaryColor};
   color: ${({ theme }) => theme.colors.toggleColor};
   font-size: 2.2rem;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(0.85);
+  }
 `;
 
 export const Menu = styled.ul`
